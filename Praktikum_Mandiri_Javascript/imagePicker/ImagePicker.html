@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Picker</title>
+	<style>
+		*{
+			box-sizing: border-box;
+		}
+
+		body{
+			background-color: rgb(242, 24, 24);
+		}
+
+		.judul{
+			text-align: center;
+			margin: 50px;
+		}
+
+		.judul hr{
+			width: 200px;
+		}
+
+		.list{
+			text-align: center;
+			border-radius: 1em;
+		}
+
+		.gambar{
+			margin-top: 50px;
+			text-align: center;
+		}
+
+		.gambar img{
+			width: 500px;
+			border-radius: 10px;
+		}
+	
+	</style>
+</head>
+<body>
+	<div class="judul">
+    	<h2>Superhero Marvel Terkuat</h2>
+		<hr>
+	</div>
+	<div class="list">
+		<form id="list">
+			<select onChange="return choose()" name="pic" id="pic" >
+				<option>--- Choose Superhero Marvel ---</option>
+				<option value="1"> SUPERHERO HULK </option>
+				<option value="2"> SUPERHERO SCARLET WITCH </option>
+				<option value="3"> SUPERHERO DOCTOR STRANGE </option>
+				<option value="4"> SUPERHERO THOR </option>
+				<option value="5"> SUPERHERO CAPTAIN MARVEL </option>
+			</select>
+		</form>
+	</div>
+	<div class = "gambar">
+		<div id="img"></div>
+	</div>
+	<script>
+		function choose(){
+			var choose=document.getElementById("list").pic.value;
+			
+			if (choose =="1"){
+			document.getElementById("img").innerHTML="<img src = 'Hulk.jpg'>";
+			window.alert("Ini adalah Superhero Hulk.jpg");
+			}
+
+			else if (choose=="2"){
+			document.getElementById("img").innerHTML="<img src = 'ScarletWitch.jpg'>";
+			window.alert("Ini adalah Superhero Scarlet Witch.jpg");
+			}
+
+			else if (choose=="3"){
+			document.getElementById("img").innerHTML="<img src= 'Doctor Strange.jpg'>";
+			window.alert("Ini adalah Superhero Doctor Strange.jpg");
+			}
+
+			else if (choose =="4"){
+			document.getElementById("img").innerHTML="<img src='Thor.jpg'>";
+			window.alert("Ini adalah Superhero Thor.jpg");
+			}
+		
+			else if (choose=="5"){
+			document.getElementById("img").innerHTML="<img src='CaptainMarvel.jpg'>";
+			window.alert("Ini adalah Superhero Captain Marvel.jpg");
+			}
+		
+		}
+	</script>
+</body>
+</html>
