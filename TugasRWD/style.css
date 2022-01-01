@@ -1,0 +1,46 @@
+body {
+  height: 3000px;
+}
+
+.jumbotron {
+  background-color: #beffee;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #61d2b4;
+}
+
+footer {
+  background-color: #61d2b4;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+#img-1 {
+  width: 50px;
+}
+
+#img-2 {
+  width: 200px;
+}
+
+#feature {
+  background-color: #beffee;
+}
+
+@media (min-width: 600px) {
+  #img-1 {
+    width: 80px;
+  }
+  #img-2 {
+    width: 400px;
+  }
+}
